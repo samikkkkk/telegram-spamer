@@ -19,7 +19,7 @@ async def main():
         raise ValueError("API_ID and API_HASH must be set in the environment variables.")
     
     sessions = await parse_sessions()
-    print(sessions)
+    print(sessions) # debug
 
     if not sessions:
         print("No sessions found.")
