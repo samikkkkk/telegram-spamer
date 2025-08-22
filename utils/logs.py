@@ -14,7 +14,5 @@ logger.add(
     filter=lambda record: record["extra"].get("name") == "parse"
 )
 
-validate_logger = logger.bind(name="validate")
-parse_logger = logger.bind(name="parse")
 parse_logger = logger.bind(name="parse")
 validate_logger = logger.bind(name="validate")
